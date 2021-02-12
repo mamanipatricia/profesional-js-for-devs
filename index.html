@@ -1,0 +1,35 @@
+<!-- Because of the way that inline scripts are parsed, the browser sees the string "</script>" as if it were the closing </script> tag
+
+<script src="http://www.somewhere.com/afile.js"></script>
+When the browser goes to resolve this resource, it will send a GET request to the path specified in the
+src attribute to retrieve the resource—presumably a JavaScript file
+
+The second option for turning this code into a valid XHTML version is to wrap the JavaScript code
+in a CDATA section. In XHTML (and XML), CDATA sections are used to indicate areas of the docu-
+ment that contain free-form text not intended to be parsed. This enables you to use any character,
+including the less-than symbol, without incurring a syntax error
+
+VAR, LET
+The declaration redundancy errors are not a function of order, and are not affected if let is mixed
+with var. The different keywords do not declare different types of variables—they just specify how
+the variables exist inside the relevant scope.
+
+Be aware there are a few cases where typeof seemingly returns a confusing but technically correct
+value. Calling typeof null returns a value of "object", as the special value null is considered to be an empty object reference.
+
+## , functions are considered objects
+
+The typeof operator returns "undefined" when called on an uninitialized variable, but it also
+returns "undefined" when called on an undeclared variable, which can be a bit confusing. 
+
+The value undefined is falsy
+
+-->
+
+
+<script>
+  function sayScript() {
+    console.log("<\/script>");
+  }
+</script>
+
