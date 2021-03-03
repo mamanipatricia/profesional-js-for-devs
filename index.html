@@ -26,21 +26,104 @@ The value undefined is falsy
 
 -->
 
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <title>You won't be able to get back here</title>
   </head>
 
   <body>
-    <p>Enjoy this page for a second, because you won't be coming back here.</p>
-    <script>
+    <div>
+      <p>
+        Enjoy this page for a second, because you won't be coming back here.
+      </p>
+      <article>an article..</article>
+      <span class="nodes">FOR NODES EXAMPLES</span>
+    </div>
+    <!-- <script>
       setTimeout(() => location.replace("http://www.wrox.com/"), 1000);
-    </script>
-  </body>
-  </html> -->
+    </script> -->
 
-<script src="indexCap12.js">
+    <ul>
+      <li>item 1</li>
+      <li>item 2</li>
+      <li>item 3</li>
+    </ul>
+
+    <div id="myDiv">Some text</div>
+
+    <img src="pexels-photo.jpeg" name="myImage" />
+    <img src="pexels-photo-1.jpeg" name="myImage1" />
+
+    <fieldset>
+      <legend>Which color do you prefer?</legend>
+      <ul>
+        <li>
+          <input type="radio" value="red" name="color" id="colorRed" />
+          <label for="colorRed">Red</label>
+        </li>
+        <li>
+          <input type="radio" value="green" name="color" id="colorGreen" />
+          <label for="colorGreen">Green</label>
+        </li>
+        <li>
+          <input type="radio" value="blue" name="color" id="colorBlue" />
+          <label for="colorBlue">Blue</label>
+        </li>
+      </ul>
+    </fieldset>
+
+    <div
+      id="myDiv2"
+      class="bd"
+      title="Body text"
+      lang="en"
+      dir="ltr"
+      style="background: red"
+      onclick="alert('onclickkkk')"
+    >
+      my id 2
+    </div>
+    <q>qqqqqqqqqqqqqqq</q>
+    <dl>
+      <dt>dtttt</dt>
+      <dd>ddddddd</dd>
+    </dl>
+    <em>emmmmmmm</em>
+    <s>sssssssssssss</s>
+    <del>deeeeeeeeeel</del>
+    <samp>saaaaaaaammmm</samp>
+    <strike>strikeeeeeeeeee</strike>
+    <sub>25</sub>
+    <sup>277</sup>
+    <var>vaaarrr</var>
+    <tt>hoslaaa</tt>
+
+    <div id="myDiv3" align="left" my_special_attribute="hello!"></div>
+
+    <!-- no content, so no text node -->
+    <div id="textType1">test</div>
+    <!-- white space content, so one text node -->
+    <div></div>
+    <!-- content, so one text node -->
+    <div>Hello World!</div>
+
+    <button id="myButton">CLICK ME...</button>
+
+    <div id="myDiv4" data-appid="12345" data-myname="Nicholas"></div>
+
+    <div id="content">
+      <p>This is a <strong>paragraph</strong> with a list following it.</p>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+    </div>
+  </body>
+</html>
+
+<script src="indexCap15.js">
   function sayScript() {
     console.log("<\/script>");
   }
