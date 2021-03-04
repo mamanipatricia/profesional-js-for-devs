@@ -30,6 +30,13 @@ The value undefined is falsy
 <html>
   <head>
     <title>You won't be able to get back here</title>
+    <style type="text/css">
+      #myDiv {
+        background-color: blue;
+        width: 100px;
+        height: 200px;
+      }
+    </style>
   </head>
 
   <body>
@@ -120,10 +127,23 @@ The value undefined is falsy
         <li>Item 3</li>
       </ul>
     </div>
+
+    <div
+      id="myDiv"
+      style="background-color: blue; width: 10px; height: 25px"
+    ></div>
+
+    <!-- styles -->
+    <div
+      id="myDiv"
+      style="background-color: red; border: 1px solid black"
+    ></div>
+
+    <p id="p1"><b>Hello</b> world!</p>
   </body>
 </html>
 
-<script src="indexCap15.js">
+<script src="indexCap16.js">
   function sayScript() {
     console.log("<\/script>");
   }
