@@ -140,10 +140,169 @@ The value undefined is falsy
     ></div>
 
     <p id="p1"><b>Hello</b> world!</p>
+
+    <input type="button" value="Click Me" onclick="console.log('Clicked')" />
+    <input type="button" value="Click Me AGAIN" onclick="showMessage()" />
+    <br />
+    <input type="button" value="Click Me1" onclick="console.log(event.type)" />
+    <input type="button" value="Click Me2" onclick="console.log(this.value)" />
+
+    <!-- form -->
+    <form method="post">
+      <input type="text" name="username " value="" />
+      <input
+        type="button"
+        value="Echo Username"
+        onclick="console.log(this)"
+        onclick="console.log(this.value)"
+        onclick="console.log(username.value)"
+      />
+    </form>
+    <!-- form -->
+
+    <input
+      type="button"
+      value="Click Me"
+      onclick="try{showMessage();}catch(ex) {}"
+    />
+    <input id="myBtn" type="button" value="Click Me3" />
+    <a id="myLink" href="http://google.com">go to google...</a>
+
+    <img src="hehehe-monkey.gif" onload="console.log('Image loaded.')" />
+
+    <input id="myText" type="textbox" name="username " value="" />
+    <br />
+    <ul id="myLinks">
+      <li id="goSomewhere">Go somewhere</li>
+      <li id="doSomething">Do something</li>
+      <li id="sayHi">Say hi</li>
+    </ul>
+
+    <div id="myDiv">
+      <input type="button" value="Click Me" id="myBtn" />
+    </div>
+    <span id="status">a spannn...</span>
+
+    <!-- CANVAS -->
+    <canvas id="drawing" width="200" height="200">
+      A drawing of something...</canvas
+    >
+    <!-- FORMS -->
+    <form id="form1">
+      <input type="text" name="username1" value="" />
+      <input type="button" value="Echo Username1" onclick="console.log(this)" />
+    </form>
+    <form id="form2">
+      <input type="text" name="username2" value="" />
+      <input type="button" value="Echo Username2" onclick="console.log(this)" />
+    </form>
+
+    <!-- move inside to forms -->
+    <!-- SUBMITTING FORMS -->
+    <!-- generic submit button -->
+    <input type="submit" value="Submit Form" />
+    <!-- custom submit button -->
+    <button type="submit">Submit Form</button>
+
+    <!-- image button -->
+    <!-- <input type="image" src="hehehe-monkey.gif" /> -->
+
+    <div
+      style="
+        background: greenyellow;
+        border: 1px solid red;
+        margin: 5px;
+        padding: 20px;
+        display: flex;
+      "
+    >
+      <form
+        id="myForm"
+        style="
+          display: flex;
+          flex-direction: column;
+          padding: 5px;
+          row-gap: inherit;
+          column-gap: 3cm;
+        "
+      >
+        <input type="text" name="username2" value="test" autofocus />
+        <input type="text" name="username3" value="test3" autofocus />
+        <input type="checkbox" name="username4" value="test4" />
+        <input type="checkbox" name="username4" value="test4" />
+        <input type="textbox" name="username3" value="test3" />
+        <input
+          name="submit-btn"
+          type="submit"
+          value="myForm"
+          onclick="console.log(username3)"
+        />
+      </form>
+    </div>
+    <!-- generic reset button -->
+    <input type="reset" value="Reset Form" />
+    <!-- custom reset button -->
+    <button type="reset">Reset Form</button>
+
+    <form method="post" id="myForm1">
+      <ul>
+        <li><input type="radio" name="color" value="red" />Red</li>
+        <li><input type="radio" name="color" value="green" />Green</li>
+        <li><input type="radio" name="color" value="blue" />Blue</li>
+      </ul>
+    </form>
+
+    <!-- TEXT BOX - input and textarea -->
+    <form id="myForm2" action="">
+      <input
+        id="textbox1"
+        type="text"
+        size="25"
+        maxlength="50"
+        value="initial value"
+      />
+
+      <textarea rows="5" cols="15">initial value</textarea>
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          width: 200px;
+          margin: 20px;
+        "
+      >
+        <input type="text" name="tel1" id="txtTel1" maxlength="3" />
+        <input type="text" name="tel2" id="txtTel2" maxlength="3" />
+        <input type="text" name="tel3" id="txtTel3" maxlength="4" />
+
+        <input type="text" name="username" required />
+      </div>
+    </form>
+
+    <input type="email" name="email" />
+    <input type="url" name="homepage" />
+
+    <input type="text" pattern="\d+" name="count" />
+
+    <form id="myForm3" action="">
+      <select name="location" id="selLocation">
+        <option value="Sunnyvale, CA">Sunnyvale</option>
+        <option value="Los Angeles, CA">Los Angeles</option>
+        <option value="Mountain View, CA">Mountain View</option>
+        <option value="">China</option>
+        <option>Australia</option>
+      </select>
+    </form>
+
+    <iframe name="richedit" style="height: 100px; width: 100px"></iframe>
+
+    <div class="editable" id="richedit" style="border: 1px solid black;" contenteditable>...</div>
+
+    <!-- form -->
   </body>
 </html>
 
-<script src="indexCap16.js">
+<script src="indexCap20.js">
   function sayScript() {
     console.log("<\/script>");
   }
