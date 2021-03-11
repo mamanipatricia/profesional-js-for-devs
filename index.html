@@ -294,15 +294,67 @@ The value undefined is falsy
       </select>
     </form>
 
-    <iframe name="richedit" style="height: 100px; width: 100px"></iframe>
+    <iframe
+      id="myframe"
+      name="richedit"
+      style="height: 100px; width: 100px"
+    ></iframe>
 
-    <div class="editable" id="richedit" style="border: 1px solid black;" contenteditable>...</div>
+    <div
+      class="editable"
+      id="richedit"
+      style="border: 1px solid black"
+      contenteditable
+    >
+      ...
+    </div>
 
     <!-- form -->
+
+    <!-- MEDIA ELEMENTS -->
+    <!-- embed a video -->
+
+    <video src="https://www.youtube.com/watch?v=TmFP1AP-afM" id="myVideo">
+      Video player not available.
+    </video>
+    <!-- embed an audio file -->
+    <audio src="song.mp3" id="myAudio">Audio player not available.</audio>
+
+    <div class="mediaplayer">
+      <div class="video">
+        <video
+          id="player"
+          src="https://www.youtube.com/watch?v=TmFP1AP-afM"
+          poster="mymovie.jpg"
+          width="300"
+          height="200"
+        >
+          Video player not available.
+        </video>
+      </div>
+      <div class="controls">
+        <input type="button" value="Play" id="video-btn" />
+        <span id="curtime">0</span>/<span id="duration">0</span>
+      </div>
+    </div>
+    <!-- MEDIA ELEMENTS -->
+    <div id="droptarget">qwerety</div>
+
+    <!-- WEB COMPONENTS -->
+    <template id="foo0">
+      <p>I'm inside a template!</p>
+    </template>
+
+    <template id="foo">
+      #document-fragment
+      <p>I'm inside a template!</p>
+    </template>
+
+    
   </body>
 </html>
 
-<script src="indexCap20.js">
+<script src="indexCap21.js">
   function sayScript() {
     console.log("<\/script>");
   }
