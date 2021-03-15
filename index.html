@@ -59,8 +59,8 @@ The value undefined is falsy
 
     <div id="myDiv">Some text</div>
 
-    <img src="pexels-photo.jpeg" name="myImage" />
-    <img src="pexels-photo-1.jpeg" name="myImage1" />
+    <img id="myImage" src="pexels-photo.jpeg" name="myImage" />
+    <img id="myImage1" src="pexels-photo-1.jpeg" name="myImage1" />
 
     <fieldset>
       <legend>Which color do you prefer?</legend>
@@ -349,13 +349,28 @@ The value undefined is falsy
       #document-fragment
       <p>I'm inside a template!</p>
     </template>
+    <!-- MODULES -->
+    <script type="module">
+      // module code
+    </script>
+    <script type="module" src="path/to/myModule.js"></script>
 
-    
+    <!-- moduleA will only load a single time on this page -->
+    <script type="module">
+      import "./moduleA.js";
+    </script>
+    <script type="module">
+      import "./moduleA.js";
+    </script>
+    <script type="module" src="./moduleA.js"></script>
+
+    <script type="module" src="./moduleA.js"></script>
+
+    <!-- MAIN MODULE -->
+    <script src="indexCap28.js">
+      function sayScript() {
+        console.log("<\/script>");
+      }
+    </script>
   </body>
 </html>
-
-<script src="indexCap21.js">
-  function sayScript() {
-    console.log("<\/script>");
-  }
-</script>
